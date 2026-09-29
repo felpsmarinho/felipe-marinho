@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Marinho | Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="public/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo-link">
+                <img src="public/logo.jpg" alt="FM Logo" class="nav-logo">
+                <span class="logo-text">Felipe Marinho</span>
+            </a>
+            <div class="nav-links">
+                <a href="#work" class="nav-link">Trabalhos</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="hero">
+            <video class="hero-bg-video" src="public/videos/particles.mp4" autoplay loop muted playsinline></video>
+            <div class="hero-overlay"></div>
+            <div class="hero-glow glow-1"></div>
+            <div class="hero-glow glow-2"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line animate-up"></span>
+                    <span class="title-line animate-up delay-1">Experiências Digitais</span>
+                    <span class="title-line animate-up delay-2">Impecáveis<span class="gradient-text">.</span></span>
+                </h1>
+                <p class="hero-subtitle animate-up delay-3">Felipe Marinho — Desenvolvedor Web & Designer.</p>
+                <div class="hero-cta animate-up delay-4">
+                    <a href="#work" class="btn btn-primary">Ver Projetos</a>
+                </div>
+            </div>
+            <div class="scroll-indicator animate-fade-in delay-5">
+                <span>Scroll</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work" id="work">
+            <div class="section-header fade-up">
+                <h2>Projetos Selecionados</h2>
+                <p>Uma coleção de projetos recentes</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card fade-up">
+                    <div class="project-video-wrapper">
+                        <div class="project-video-inner">
+                            <video class="project-video" src="public/videos/furiavoleibol.webm" autoplay loop muted
+                                playsinline></video>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fúria Voleibol</h3>
+                        <p>Plataforma Digital e Branding Esportivo</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card fade-up">
+                    <div class="project-video-wrapper">
+                        <div class="project-video-inner">
+                            <video class="project-video" src="public/videos/junick.webm" autoplay loop muted
+                                playsinline></video>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Junick</h3>
+                        <p>Consultoria Fiscal e Imigratória</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card fade-up">
+                    <div class="project-video-wrapper">
+                        <div class="project-video-inner">
+                            <video class="project-video" src="public/videos/volleydash.webm" autoplay loop muted
+                                playsinline></video>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>VolleyDash</h3>
+                        <p>Plataforma de Gestão de Equipes de Voleibol</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-container fade-up">
+                <div class="about-text">
+                    <h2>Guiado pela estética e usabilidade.</h2>
+                    <p>Eu misturo design, motion e interação para criar produtos digitais que deixam uma impressão
+                        duradoura. Cada detalhe importa.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer fade-up">
+        <div class="footer-content">
+            <h2>Vamos criar algo <span class="gradient-text">extraordinário juntos.</span></h2>
+
+            <form name="contact" method="POST" data-netlify="true" action="/sucesso.html" class="contact-form fade-up">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <textarea name="message" placeholder="Conte sobre seu projeto..." required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
+
+            <a href="mailto:contacto@felipemarinho.site" class="contact-email">contacto@felipemarinho.site</a>
+
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <img src="public/logo.jpg" alt="FM Logo" class="nav-logo">
+                </div>
+                <div class="socials">
+                    <a href="https://github.com/felpsmarinho?tab=repositories" target="_blank">GitHub</a>
+                </div>
+                <p>&copy; 2026 Felipe Marinho. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
