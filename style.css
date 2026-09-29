@@ -155,6 +155,38 @@ h1, h2, h3, h4 {
     color: var(--text-primary);
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    width: 100%;
+    height: 2px;
+    background: var(--text-primary);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -592,6 +624,33 @@ h1, h2, h3, h4 {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(5, 5, 5, 0.98);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        transition: right 0.5s var(--ease-out-expo);
+        z-index: 1000;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-link {
+        font-size: 2rem;
+    }
+
     .section-header {
         flex-direction: column;
         align-items: flex-start;
